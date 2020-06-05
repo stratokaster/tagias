@@ -1,0 +1,38 @@
+.btn{
+	display: -webkit-inline-flex;
+	display: -moz-inline-flex;
+	display: -ms-inline-flex;
+	display: -o-inline-flex;
+	display: inline-flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	height: 70px;
+	min-width: 285px;
+	font-family: var(--avenir);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 22px;
+	line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.15px;
+}
+.btn-transparent{
+	color: var(--green);
+	border: 1px solid var(--green);
+}
+.btn-transparent:hover{
+	color: white;
+	background-color: var(--green);
+}
+.btn-primary{
+	color: white;
+	background-color: var(--green);
+	border: 1px solid var(--green);
+}
+.btn-primary:hover{
+	color: white;
+	border: 1px solid var(--green-dark);
+	background-color: var(--green-dark);
+}
