@@ -1,3 +1,7 @@
+"use strict";
+
+
+
 $(document).ready(function() { 
 
 $(function(){
@@ -10,5 +14,15 @@ $(function(){
 });
 
 
+	// $('.scrollbar-macosx').scrollbar();
+
 
 });
+$(window).on('scroll', function(){
+	if($(this).scrollTop() > 500){
+		$('header').addClass('fixed');
+	}else{
+		$('header').removeClass('fixed');
+	}
+})
+
