@@ -34,7 +34,7 @@
 <body class="innerpage">
     <header>
         <div class="wrapper">
-            <a href="#">
+            <a href="index.html">
                 <div class="logo">
                     <span class="logo--square">
                         <span class="logo-inner--square"></span>
@@ -52,7 +52,7 @@
                 <ul>
                     <li><a href="#">Quality</a></li>
                     <li><a href="#">how we work</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="services.html">Services</a></li>
                     <li><a href="#">Cases</a></li>
                     <li><a href="#">API</a></li>
                     <li><a href="#">Contact</a></li>
@@ -118,28 +118,110 @@
                 </div>
                 <div class="anatiations--container">
                     <div class="anatiations--nav">
-                        <div class="anatiations-nav--item">
-                            <img src="images/bounding.png" alt="">
+                        <div class="anatiations-nav--item" data-href="bounding">
+                            <img src="images/bounding.png" class="normal" alt="">
+                            <img src="images/bounding-w.png" class="hover" alt="">
                             <span>Bounding boxes</span>
                         </div>
-                        <div class="anatiations-nav--item">
-                            <img src="images/polygon.png" alt="">
+                        <div class="anatiations-nav--item" data-href="polygon">
+                            <img src="images/polygon.png" class="normal" alt="">
+                            <img src="images/polygon-w.png" class="hover" alt="">
                             <span>Polygons</span>
                         </div>
-                        <div class="anatiations-nav--item">
-                            <img src="images/clasifications.png" alt="">
+                        <div class="anatiations-nav--item" data-href="clasifications">
+                            <img src="images/clasifications.png" class="normal" alt="">
+                            <img src="images/clasifications-w.png" class="hover" alt="">
                             <span>Classification</span>
                         </div>
-                        <div class="anatiations-nav--item">
-                            <img src="images/lines.png" alt="">
+                        <div class="anatiations-nav--item" data-href="lines">
+                            <img src="images/lines.png"  class="normal"  alt="">
+                            <img src="images/lines-w.png" class="hover" alt="">
                             <span>Lines</span>
                         </div>
-                        <div class="anatiations-nav--item">
-                            <img src="images/keypoints.png" alt="">
+                        <div class="anatiations-nav--item" data-href="keypoints">
+                            <img src="images/keypoints.png" class="normal" alt="">
+                            <img src="images/keypoints-w.png" class="hover" alt="">
                             <span>Keypoints</span>
                         </div>
                     </div>
-                    <div class="anatiations--preview">
+                    <div class="anatiations--preview" id="bounding">
+                        
+                        <div class="case-info">
+                            <div class="case-image--box"><img src="images/case2.png" alt=""></div>
+                            <div class="case-scroll--box scrollbar-inner">
+                                <textarea>JSON response
+                                    {
+                                        "image": "tagias_com_street_1.jpg",
+                                        "annotations": [
+                                            {
+                                                "type": "RECT",
+                                                "id": "5ddcc073-0dcb-40f7-9a44-b1313128ceea",
+                                                "x": 647.6827513067192,
+                                                "y": 413.5145846767097,
+                                                "width": 373.6898719793955,
+                                                "height": 238.57076729532292,
+                                                "rotation": 0
+                                            },
+                                            {
+                                                "type": "RECT",
+                                                "id": "4c9baf4e-0d0d-430c-8f2b-666c97ec5d84",
+                                                "x": 13.703100689039996,
+                                                "y": 441.46558257667397,
+                                                "width": 136.7350589035969,
+                                                "height": 50.67394270985242,
+                                                "rotation": 0
+                                            },
+                                            {
+                                                "type": "RECT",
+                                                "id": "6b3e347b-cf5b-46d1-9cb8-373aa5a22772",
+                                                "x": 249.1986998892127,
+                                                "y": 438.92240714558693,
+                                                "width": 124.36971019691954,
+                                                "height": 66.82988272897182,
+                                                "rotation": 0
+                                            },
+                                            {
+                                                "type": "RECT",
+                                                "id": "68b8ae46-7731-478a-b5e2-2a57d1bf8e54",
+                                                "x": 85.32352436753023,
+                                                "y": 418.6487812049709,
+                                                "width": 53.94811180472548,
+                                                "height": 127.59063521259822,
+                                                "rotation": 0
+                                            },
+                                            {
+                                                "type": "RECT",
+                                                "id": "79c44319-6d90-48c4-af5d-12b64ec2dbe3",
+                                                "x": 447.3389820863258,
+                                                "y": 437.18924900649097,
+                                                "width": 149.9178309117428,
+                                                "height": 111.03922726412455,
+                                                "rotation": 0
+                                            }
+                                        ]
+                                    }
+                                </textarea>
+                            </div>
+                        </div>
+                        <div class="case--descroption">
+                            <div class="case--desc-title">Bounding boxes</div>
+                            <div class="case--descroption-text">Текстовое описание где применяется и зачем это все нужно а также что-то еще Текстовое описание где применяется и зачем это все нужно а также что-то еще Текстовое описание где применяется и зачем это все нужно а также что-то еще</div>
+                            <div class="case--psrice">From $0.01</div>
+                        </div>
+                    </div>
+                    <div class="anatiations--preview" id="polygon">
+                        polygon
+                    </div>
+                    <div class="anatiations--preview" id="clasifications">
+                        clasifications
+                    </div>
+                    <div class="anatiations--preview" id="lines">
+                        lines
+                    </div>
+                    <div class="anatiations--preview" id="keypoints">
+                        keypoints
+                    </div>
+                    <div class="anatiations--preview active" id="nothing-selected">
                         <div class="anatiations-galery--image">
                             <img src="images/serv6.jpg" alt="">
                         </div>
@@ -155,14 +237,14 @@
                         <div class="anatiations-galery--image">
                             <img src="images/serv10.jpg" alt="">
                         </div>
+                        <div class="annotation text-center">
+                            Free advice on what to choose <a href="mailto:hello@tagias.com">hello@tagias.com</a>
+                        </div>
                     </div>
                 </div>
                 <div class="servise--btns mobile-visible">
                     <a href="#" class="btn btn-primary">Order</a>
                     <a href="#" class="btn btn-transparent">LAT’S TALK</a>
-                </div>
-                <div class="annotation text-center">
-                    Free advice on what to choose <a href="mailto:hello@tagias.com">hello@tagias.com</a>
                 </div>
             </div>
         </div>

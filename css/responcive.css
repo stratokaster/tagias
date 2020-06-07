@@ -251,6 +251,10 @@
 		font-size: 18px;
 		height: 60px;
 	}
+	.form-btns--box .btn{
+	    width: 100%;
+		max-width: 100%;
+	}
 	.main-content--buttons .btn{
 		min-width: 300px;
 	}

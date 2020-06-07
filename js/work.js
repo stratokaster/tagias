@@ -23,6 +23,15 @@ $(function(){
 			$(this).parent().addClass('opened')
 		}
 	})
+	$('.anatiations-nav--item').on('click', function () {
+		var target = $(this).data('href');
+		$('.anatiations-nav--item').removeClass('active')
+		$('.anatiations--preview').removeClass('active');
+		if (!$(this).hasClass('active')) {
+			$(this).addClass('active');
+			$('#'+target+'').addClass('active')
+		}
+	})
 
 
 });
