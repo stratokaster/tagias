@@ -25,6 +25,7 @@
     <meta property="og:site_name" content="Site"/>
     <meta property="og:see_also" content="localhost"/>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responcive.css">
     <!--[if lt IE 9]>
@@ -83,11 +84,11 @@
                     <p>Текстом описывает что именнно мы собираем и как мы это длеаем Текстом описывает что именнно мы собираем и как мы это длеаем Текстом описывает что именнно мы собираем и как мы это длеаем.</p>
                 </div>
                 <div class="service-galery--title">Minimal price is $0.04 per image</div>
-                <div class="service-galery--container">
+                <div class="service-galery--container owl-carousel">
                     <div class="service-galery--item">
                         <img src="images/serv1.jpg" alt="">
                     </div>
-                    <div class="service-galery--item">
+                    <div class="service-galery--item two-images">
                         <img src="images/serv2.jpg" alt="">
                         <img src="images/serv3.jpg" alt="">
                     </div>
@@ -114,6 +115,23 @@
                     <div class="servise--btns mobile-hidden">
                         <a href="#" class="btn btn-primary">Order</a>
                         <a href="#" class="btn btn-transparent">LAT’S TALK</a>
+                    </div>
+                </div>
+                <div class="anatiations-carousel owl-carousel">
+                    <div class="anatiations-carousel--image">
+                        <img src="images/serv6.jpg" alt="">
+                    </div>
+                    <div class="anatiations-carousel--image">
+                        <img src="images/serv7.jpg" alt="">
+                    </div>
+                    <div class="anatiations-carousel--image">
+                        <img src="images/serv8.jpg" alt="">
+                    </div>
+                    <div class="anatiations-carousel--image">
+                        <img src="images/serv9.jpg" alt="">
+                    </div>
+                    <div class="anatiations-carousel--image">
+                        <img src="images/serv10.jpg" alt="">
                     </div>
                 </div>
                 <div class="anatiations--container">
@@ -144,101 +162,205 @@
                             <span>Keypoints</span>
                         </div>
                     </div>
-                    <div class="anatiations--preview" id="bounding">
-                        
-                        <div class="case-info">
-                            <div class="case-image--box"><img src="images/case2.png" alt=""></div>
-                            <div class="case-scroll--box scrollbar-inner">
-                                <textarea>JSON response
-                                    {
-                                        "image": "tagias_com_street_1.jpg",
-                                        "annotations": [
+                    <div class="anotiations--container">
+                        <div class="anatiations--block" id="bounding">
+                            <div class="anatiations--preview">
+                                <div class="case-info">
+                                    <div class="case-image--box"><img src="images/case2.png" alt=""></div>
+                                    <div class="case-scroll--box scrollbar-inner">
+                                        <textarea>JSON response
                                             {
-                                                "type": "RECT",
-                                                "id": "5ddcc073-0dcb-40f7-9a44-b1313128ceea",
-                                                "x": 647.6827513067192,
-                                                "y": 413.5145846767097,
-                                                "width": 373.6898719793955,
-                                                "height": 238.57076729532292,
-                                                "rotation": 0
-                                            },
-                                            {
-                                                "type": "RECT",
-                                                "id": "4c9baf4e-0d0d-430c-8f2b-666c97ec5d84",
-                                                "x": 13.703100689039996,
-                                                "y": 441.46558257667397,
-                                                "width": 136.7350589035969,
-                                                "height": 50.67394270985242,
-                                                "rotation": 0
-                                            },
-                                            {
-                                                "type": "RECT",
-                                                "id": "6b3e347b-cf5b-46d1-9cb8-373aa5a22772",
-                                                "x": 249.1986998892127,
-                                                "y": 438.92240714558693,
-                                                "width": 124.36971019691954,
-                                                "height": 66.82988272897182,
-                                                "rotation": 0
-                                            },
-                                            {
-                                                "type": "RECT",
-                                                "id": "68b8ae46-7731-478a-b5e2-2a57d1bf8e54",
-                                                "x": 85.32352436753023,
-                                                "y": 418.6487812049709,
-                                                "width": 53.94811180472548,
-                                                "height": 127.59063521259822,
-                                                "rotation": 0
-                                            },
-                                            {
-                                                "type": "RECT",
-                                                "id": "79c44319-6d90-48c4-af5d-12b64ec2dbe3",
-                                                "x": 447.3389820863258,
-                                                "y": 437.18924900649097,
-                                                "width": 149.9178309117428,
-                                                "height": 111.03922726412455,
-                                                "rotation": 0
+                                                "image": "tagias_com_street_1.jpg",
+                                                "annotations": [
+                                                    {
+                                                        "type": "RECT",
+                                                        "id": "5ddcc073-0dcb-40f7-9a44-b1313128ceea",
+                                                        "x": 647.6827513067192,
+                                                        "y": 413.5145846767097,
+                                                        "width": 373.6898719793955,
+                                                        "height": 238.57076729532292,
+                                                        "rotation": 0
+                                                    },
+                                                    {
+                                                        "type": "RECT",
+                                                        "id": "4c9baf4e-0d0d-430c-8f2b-666c97ec5d84",
+                                                        "x": 13.703100689039996,
+                                                        "y": 441.46558257667397,
+                                                        "width": 136.7350589035969,
+                                                        "height": 50.67394270985242,
+                                                        "rotation": 0
+                                                    },
+                                                    {
+                                                        "type": "RECT",
+                                                        "id": "6b3e347b-cf5b-46d1-9cb8-373aa5a22772",
+                                                        "x": 249.1986998892127,
+                                                        "y": 438.92240714558693,
+                                                        "width": 124.36971019691954,
+                                                        "height": 66.82988272897182,
+                                                        "rotation": 0
+                                                    },
+                                                    {
+                                                        "type": "RECT",
+                                                        "id": "68b8ae46-7731-478a-b5e2-2a57d1bf8e54",
+                                                        "x": 85.32352436753023,
+                                                        "y": 418.6487812049709,
+                                                        "width": 53.94811180472548,
+                                                        "height": 127.59063521259822,
+                                                        "rotation": 0
+                                                    },
+                                                    {
+                                                        "type": "RECT",
+                                                        "id": "79c44319-6d90-48c4-af5d-12b64ec2dbe3",
+                                                        "x": 447.3389820863258,
+                                                        "y": 437.18924900649097,
+                                                        "width": 149.9178309117428,
+                                                        "height": 111.03922726412455,
+                                                        "rotation": 0
+                                                    }
+                                                ]
                                             }
-                                        ]
-                                    }
-                                </textarea>
+                                        </textarea>
+                                    </div>
+                                </div>
+                                <div class="case--descroption">
+                                    <div class="case--desc-title">Bounding boxes</div>
+                                    <div class="case--descroption-text">Текстовое описание где применяется и зачем это все нужно а также что-то еще Текстовое описание где применяется и зачем это все нужно а также что-то еще Текстовое описание где применяется и зачем это все нужно а также что-то еще</div>
+                                    <div class="case--psrice">From $0.01</div>
+                                </div>
                             </div>
                         </div>
-                        <div class="case--descroption">
-                            <div class="case--desc-title">Bounding boxes</div>
-                            <div class="case--descroption-text">Текстовое описание где применяется и зачем это все нужно а также что-то еще Текстовое описание где применяется и зачем это все нужно а также что-то еще Текстовое описание где применяется и зачем это все нужно а также что-то еще</div>
-                            <div class="case--psrice">From $0.01</div>
+                        <div class="anatiations--block" id="polygon">
+                            <div class="anatiations--preview" id="polygon">
+                                polygon
+                            </div>
+                        </div>
+                        <div class="anatiations--block" id="clasifications">
+                            <div class="anatiations--preview" id="clasifications">
+                                clasifications
+                            </div>
+                        </div>
+                        <div class="anatiations--block" id="lines">
+                            <div class="anatiations--preview" id="lines">
+                                lines
+                            </div>
+                        </div>
+                        <div class="anatiations--block" id="keypoints">
+                            <div class="anatiations--preview" id="keypoints">
+                                keypoints
+                            </div>
+                        </div>
+                        <div class="anatiations--preview active" id="nothing-selected">
+                            <div class="anatiations-galery--image">
+                                <img src="images/serv6.jpg" alt="">
+                            </div>
+                            <div class="anatiations-galery--image">
+                                <img src="images/serv7.jpg" alt="">
+                            </div>
+                            <div class="anatiations-galery--image">
+                                <img src="images/serv8.jpg" alt="">
+                            </div>
+                            <div class="anatiations-galery--image">
+                                <img src="images/serv9.jpg" alt="">
+                            </div>
+                            <div class="anatiations-galery--image">
+                                <img src="images/serv10.jpg" alt="">
+                            </div>
+                            <div class="annotation text-center">
+                                Free advice on what to choose <a href="mailto:hello@tagias.com">hello@tagias.com</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="anatiations--preview" id="polygon">
-                        polygon
-                    </div>
-                    <div class="anatiations--preview" id="clasifications">
-                        clasifications
-                    </div>
-                    <div class="anatiations--preview" id="lines">
-                        lines
-                    </div>
-                    <div class="anatiations--preview" id="keypoints">
-                        keypoints
-                    </div>
-                    <div class="anatiations--preview active" id="nothing-selected">
-                        <div class="anatiations-galery--image">
-                            <img src="images/serv6.jpg" alt="">
+                </div>
+                <div class="anatiations-accordion--container">
+                    <div class="anatiations-accordion--item">
+                        <div class="accordion-link">
+                            <div class="link-title">
+                                <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)" class="">
+                                        <path d="M0 9V0H9V3H3V9H0Z" fill="#00D4A6"/>
+                                        <path d="M24 -3.93402e-07L33 0L33 9L30 9L30 3L24 3L24 -3.93402e-07Z" fill="#00D4A6"/>
+                                        <path d="M33 24L33 33L24 33L24 30L30 30L30 24L33 24Z" fill="#00D4A6"/>
+                                        <path d="M9 33L0 33L-3.93403e-07 24L3 24L3 30L9 30L9 33Z" fill="#00D4A6"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0">
+                                            <rect width="33" height="33" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span>Bounding boxes</span>
+                            </div>
+                            <div class="arrow">
+                                <svg  viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 2L10 10L18 2" stroke="#00D4A6" stroke-width="3"/>
+                                </svg>
+                            </div>
                         </div>
-                        <div class="anatiations-galery--image">
-                            <img src="images/serv7.jpg" alt="">
-                        </div>
-                        <div class="anatiations-galery--image">
-                            <img src="images/serv8.jpg" alt="">
-                        </div>
-                        <div class="anatiations-galery--image">
-                            <img src="images/serv9.jpg" alt="">
-                        </div>
-                        <div class="anatiations-galery--image">
-                            <img src="images/serv10.jpg" alt="">
-                        </div>
-                        <div class="annotation text-center">
-                            Free advice on what to choose <a href="mailto:hello@tagias.com">hello@tagias.com</a>
+                        <div class="accordion-location">
+                            <div class="anatiations--preview">
+                                <div class="case-info">
+                                    <div class="case-image--box"><img src="images/case2.png" alt=""></div>
+                                    <div class="case-scroll--box scrollbar-inner">
+                                        <textarea>JSON response
+                                            {
+                                                "image": "tagias_com_street_1.jpg",
+                                                "annotations": [
+                                                    {
+                                                        "type": "RECT",
+                                                        "id": "5ddcc073-0dcb-40f7-9a44-b1313128ceea",
+                                                        "x": 647.6827513067192,
+                                                        "y": 413.5145846767097,
+                                                        "width": 373.6898719793955,
+                                                        "height": 238.57076729532292,
+                                                        "rotation": 0
+                                                    },
+                                                    {
+                                                        "type": "RECT",
+                                                        "id": "4c9baf4e-0d0d-430c-8f2b-666c97ec5d84",
+                                                        "x": 13.703100689039996,
+                                                        "y": 441.46558257667397,
+                                                        "width": 136.7350589035969,
+                                                        "height": 50.67394270985242,
+                                                        "rotation": 0
+                                                    },
+                                                    {
+                                                        "type": "RECT",
+                                                        "id": "6b3e347b-cf5b-46d1-9cb8-373aa5a22772",
+                                                        "x": 249.1986998892127,
+                                                        "y": 438.92240714558693,
+                                                        "width": 124.36971019691954,
+                                                        "height": 66.82988272897182,
+                                                        "rotation": 0
+                                                    },
+                                                    {
+                                                        "type": "RECT",
+                                                        "id": "68b8ae46-7731-478a-b5e2-2a57d1bf8e54",
+                                                        "x": 85.32352436753023,
+                                                        "y": 418.6487812049709,
+                                                        "width": 53.94811180472548,
+                                                        "height": 127.59063521259822,
+                                                        "rotation": 0
+                                                    },
+                                                    {
+                                                        "type": "RECT",
+                                                        "id": "79c44319-6d90-48c4-af5d-12b64ec2dbe3",
+                                                        "x": 447.3389820863258,
+                                                        "y": 437.18924900649097,
+                                                        "width": 149.9178309117428,
+                                                        "height": 111.03922726412455,
+                                                        "rotation": 0
+                                                    }
+                                                ]
+                                            }
+                                        </textarea>
+                                    </div>
+                                </div>
+                                <div class="case--descroption">
+                                    <div class="case--desc-title">Bounding boxes</div>
+                                    <div class="case--descroption-text">Текстовое описание где применяется и зачем это все нужно а также что-то еще Текстовое описание где применяется и зачем это все нужно а также что-то еще Текстовое описание где применяется и зачем это все нужно а также что-то еще</div>
+                                    <div class="case--psrice">From $0.01</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -287,6 +409,7 @@
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
     <!-- <script src="js/jquery-1.11.0.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" scoped></script>
     <script src="js/jquery.scrollbar.min.js"></script>
     <script src="js/work.js"></script>
 </body>

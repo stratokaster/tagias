@@ -5,6 +5,9 @@
 	.case-image--box{
 		width: 330px;
 	}
+	.anatiations--preview .case-info .case-image--box{
+
+	}
 	.cases-item--big {
 	    flex: 0 0 calc(66.6666% - 30px);
 	    max-width: calc(66.6666% - 30px);
@@ -95,6 +98,31 @@
 		min-width: 300px;
 		height: 60px;
 	}
+	.service-galery--container{
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		margin-bottom: 50px;
+	}
+
+	.service-galery--item{
+		width: 100%;
+		height: 300px;
+	}
+	.service-galery--item img{
+		display: block;
+		width: 100%;
+		height: 100%;
+		-o-object-fit: cover;
+		object-fit: cover;
+		object-position: center;
+	}
+	.service-galery--item.two-images img{
+		height: 50%;
+	}
+
 }
 @media(max-width: 1023px){
 	.services-content{
@@ -311,27 +339,11 @@
 	.servise--title-container{
 		font-size: 27px;
 	}
-	.service-galery--container{
-		-webkit-flex-wrap: wrap;
-		-moz-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
-		-o-flex-wrap: wrap;
-		flex-wrap: wrap;
-		margin-bottom: 50px;
-	}
-	.service-galery--item{
-		width: 50%;
-		height: auto;
-	}
-	.service-galery--item img{
-		display: block;
-		width: 100%;
-		height: auto;
-	}
 	.servise--btns .btn{
 		margin-bottom: 10px;
 	}
 	.anatiations--container{
+		display: none;
 		-webkit-flex-wrap: wrap;
 		-moz-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
@@ -341,10 +353,50 @@
 	}
 	.anatiations--nav{
 		width: 100%;
+		padding-right: 0;
 	}
 	.anatiations--preview{
 		width: 100%;
 		margin-top: 50px;
+	}
+	#nothing-selected{
+		display: none;
+	}
+	.anatiations-carousel{
+		display: block;
+		margin-bottom: 50px;
+	}
+	.anatiations-carousel--image{
+	    width: 100%;
+	    height: 300px;
+	    padding: 4px;
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	}
+	.anatiations-carousel--image img{
+		display: block;
+		width: 100%;
+		height: 100%;
+		-o-object-fit: cover;
+		object-fit: cover;
+		object-position: center;
+	}
+	.owl-carousel .owl-stage-outer{
+		overflow: visible;
+	}
+	.anotiations--container{
+		width: 100%;
+	}
+	.servise--title-container{
+		margin-bottom: 50px;
+	}
+	.anatiations--preview .case-info .case-image--box{
+		width: 100%;
+		max-width: 100%;
+	}
+	.anatiations--preview .case-info .case-scroll--box{
+		width: 100%;
 	}
 }
 @media (max-width: 767px){
@@ -353,9 +405,6 @@
 		height: auto;
 	}
 	.anatiations-galery--image{
-		width: 100%;
-	}
-	.service-galery--item{
 		width: 100%;
 	}
 	.form--container{
