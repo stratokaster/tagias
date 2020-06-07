@@ -16,6 +16,14 @@ $(function(){
 
 	// $('.scrollbar-macosx').scrollbar();
 
+	$('#hamburger').on('click', function (){
+		if($(this).parent().hasClass('opened')){
+			$(this).parent().removeClass('opened');
+		}else{
+			$(this).parent().addClass('opened')
+		}
+	})
+
 
 });
 $(window).on('scroll', function(){
