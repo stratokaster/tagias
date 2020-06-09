@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import '../fonts/stylesheet.css';
+@import '../fonts/lato.css';
 @import '_buttons.css';
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -18,7 +18,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     background: transparent;
 }
 :root{
-    --avenir: 'Avenir Next LT Pro';
+    --avenir: 'Lato';
     --green: #00D4A6;
     --green-dark: #00BC93;
     --dark: #11181D;
@@ -77,6 +77,9 @@ a{
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
+}
+a:hover{
+    color: var(--green);
 }
 .wrapper{
     position: relative;
@@ -147,6 +150,7 @@ nav ul li{
     text-transform: uppercase;
     color: white;
     font-family: var(--avenir);
+    font-weight: 600;
 }
 nav ul li a {
     padding: 10px 0;
@@ -208,6 +212,7 @@ header.fixed .get-started-btn{
     text-transform: uppercase;
     color: #00D4A6;
     font-family: var(--avenir);
+    font-weight: 600;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -321,6 +326,7 @@ header.fixed .get-started-btn{
     display: flex;
     justify-content: space-between;
     font-family: var(--avenir);
+    font-weight: 600;
     width: 100%;
 }
 .main--title{
@@ -333,6 +339,7 @@ header.fixed .get-started-btn{
     line-height: 110%;
     color: white;
     font-family: var(--avenir);
+    font-weight: 600;
     margin-top: 20px;
     width: 100%;
 }
@@ -385,6 +392,7 @@ header.fixed .get-started-btn{
     font-size: 45px;
     line-height: 137%;
     font-family: var(--avenir);
+    font-weight: 600;
 }
 .services--column{
     flex-grow: 1;
@@ -407,6 +415,7 @@ header.fixed .get-started-btn{
     font-size: 24px;
     line-height: 33px;
     font-family: var(--avenir);
+    font-weight: 600;
 }
 .services--subtitle{
     font-size: 17px;
@@ -438,6 +447,7 @@ header.fixed .get-started-btn{
 }
 .ratio--title{
     font-family: var(--avenir);
+    font-weight: 600;
     font-size: 45px;
     line-height: 150%;
 }
@@ -476,6 +486,9 @@ header.fixed .get-started-btn{
     font-size: 25px;
     line-height: 160%;
     padding-bottom: 120px;
+}
+.workflow--stage .workflow--stage-desc{
+    width: calc(100% - 74px);
 }
 .workflow--stage:before{
     content: '';
@@ -596,6 +609,7 @@ footer .slogan{
     font-size: 14px;
     line-height: 19px;
     font-family: var(--avenir);
+    font-weight: 600;
     color: var(--green);
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -760,6 +774,7 @@ footer .footer-logo--box a:hover{
     font-size: 24px;
     line-height: 33px;
     font-family: var(--avenir);
+    font-weight: 600;
     display: block;
     width: 100%;
     margin-bottom: 15px;
@@ -768,6 +783,7 @@ footer .footer-logo--box a:hover{
     font-size: 32px;
     line-height: 137%;
     font-family: var(--avenir);
+    font-weight: 600;
     margin-bottom: 20px;
 }
 .case--descroption-text{
@@ -780,13 +796,15 @@ footer .footer-logo--box a:hover{
     font-size: 25px;
     line-height: 137%;
     font-family: var(--avenir);
+    font-weight: 600;
 }
 .case-image img{
     display: block;
     max-width: 100%;
 }
 .page--title{
-    font-family: var(--avenir);        
+    font-family: var(--avenir);
+    font-weight: 600;        
     font-size: 67px;
     line-height: 100%;
     color: var(--green);
@@ -816,10 +834,15 @@ footer .footer-logo--box a:hover{
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+.validaion-box{
+    display: block;
+    width: calc(100% - 115px);
+}
 .form-control textarea{
     height: 320px;
     padding: 15px;
     resize: none;
+    width: 100%;
 }
 .form-control textarea,
 .form-control input[type=text],
@@ -841,11 +864,19 @@ footer .footer-logo--box a:hover{
 .form-control input[type=phone],
 .form-control input[type=password]{
     height: 54px;
+    width: 100%;
     padding: 0 15px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     max-width: 435px;
+}
+.validaion-box .error{
+    color: red;
+    font-size: 12px;
+    line-height: 1.5;
+    display: block;
+    width: 100%;
 }
 .form--container{
     display: -webkit-flex;
@@ -920,6 +951,7 @@ footer .footer-logo--box a:hover{
     -ms-align-items: center;
     align-items: center;
     font-family: var(--avenir);
+    font-weight: 600;
 }
 .servise--title img{
     display: block;
@@ -936,6 +968,7 @@ footer .footer-logo--box a:hover{
     font-size: 22px;
     line-height: 1.6;
     font-family: var(--avenir);
+    font-weight: 600;
     margin-bottom: 45px;
 }
 .service-galery--container{
@@ -967,15 +1000,13 @@ footer .footer-logo--box a:hover{
 
 
 
-.servise--title-container{
-    margin-bottom: 85px;
-}
 .anatiations--container{
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+    margin-top: 85px;
 }
 .anatiations--nav{
     width: 335px;
@@ -1046,7 +1077,14 @@ footer .footer-logo--box a:hover{
     font-size: 20px;
     line-height: 27px;
     font-family: var(--avenir);
+    font-weight: 600;
     cursor: pointer;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+    -webkit-transition-property: background-color, color;
+    -o-transition-property: background-color, color;
+    transition-property: background-color, color;
 }
 .anatiations-nav--item:last-child{
     margin-bottom: 0;
@@ -1057,6 +1095,20 @@ footer .footer-logo--box a:hover{
     height: auto;
     margin-right: 20px;
 }
+.anatiations-nav--item svg{
+    margin-right: 20px;
+}
+.anatiations-nav--item svg path{
+    fill: var(--green);
+    -webkit-transition: fill .3s ease;
+    -o-transition: fill .3s ease;
+    transition: fill .3s ease;
+}
+.anatiations-nav--item.active svg path,
+.anatiations-nav--item:hover svg path{
+    fill: white;
+}
+
 
 .anatiations-nav--item.active,
 .anatiations-nav--item:hover{
@@ -1109,6 +1161,7 @@ footer .footer-logo--box a:hover{
     font-size: 20px;
     line-height: 27px;
     font-family: var(--avenir);
+    font-weight: 600;
     margin-top: 150px;
 }
 .annotation a{
@@ -1197,7 +1250,27 @@ footer .footer-logo--box a:hover{
     -ms-align-items: center;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+    -webkit-transition-property: background-color, color;
+    -o-transition-property: background-color, color;
+    transition-property: background-color, color;
+}
+.accordion-link .link-title svg path{
+    fill: var(--green);
+}
+.anatiations-accordion--item{
+    margin-bottom: 50px;
+}
+.anatiations-accordion--item.active .accordion-link{
+    background-color: var(--green);
+    color: white;
+}
+.anatiations-accordion--item.active .accordion-link .link-title svg path{
+    fill: white;
 }
 .accordion-link .link-title{
     display: -webkit-flex;
@@ -1210,6 +1283,7 @@ footer .footer-logo--box a:hover{
     font-size: 20px;
     line-height: 27px;
     font-family: var(--avenir);
+    font-weight: 600;
 }
 .accordion-link .arrow {
     -webkit-transition: .3s ease;
@@ -1222,6 +1296,12 @@ footer .footer-logo--box a:hover{
     width: 18px;
     height: 11px;
 }
+.accordion-link .arrow svg path{
+    stroke: var(--green);
+}
+.anatiations-accordion--item.active .accordion-link .arrow svg path{
+    stroke: white;
+}
 .accordion-link .link-title span{
     margin-left: 20px;
 }
@@ -1229,6 +1309,9 @@ footer .footer-logo--box a:hover{
     overflow: hidden;
 }
 .accordion-location{
+    display: none;
+}
+.anatiations-accordion--container {
     display: none;
 }
 .anatiations-accordion--item.active .accordion-link .arrow{

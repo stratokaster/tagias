@@ -385,6 +385,9 @@
 	.owl-carousel .owl-stage-outer{
 		overflow: visible;
 	}
+	.anatiations-accordion--container{
+		display: block;
+	}
 	.anotiations--container{
 		width: 100%;
 	}
@@ -439,5 +442,8 @@
 	}
 	footer .wrapper{
 		padding: 60px 40px;
+	}
+	.btn{
+		max-width: 100%;
 	}
 }
