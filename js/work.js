@@ -59,9 +59,11 @@
 
 		$('.scroll').click(function(event){
 		    event.preventDefault();
+		    $('nav').removeClass('opened');
 		    $('html, body').animate({
 		        scrollTop: $( $.attr(this, 'href') ).offset().top - 100
 		    }, 500);
+
 		});
 
 

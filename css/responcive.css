@@ -401,6 +401,9 @@
 	.anatiations--preview .case-info .case-scroll--box{
 		width: 100%;
 	}
+	.get-started-btn{
+		margin-top: 100px;
+	}
 }
 @media (max-width: 767px){
 	.anatiations-galery--image:nth-child(2), .anatiations-galery--image:first-child{
@@ -428,6 +431,9 @@
 	.page--title{
 		padding: 50px 0;
 		font-size: 37px;
+	}
+	.validaion-box{
+		width: 100%;
 	}
 }
 @media (max-width: 400px) {
