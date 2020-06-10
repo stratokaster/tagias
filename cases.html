@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ru-RU">
 <head>
-    <title>Tagias.com - Let’s talk</title> 
+    <title>Tagias.com - Dataset collection and annotation</title> 
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <meta name="keywords" content="" />
     <meta name="description" content="The first step of your ML project. Tagias.com creates original datasets tailored to your specific needs and annotates data created by us or sent by you." />
@@ -91,40 +91,58 @@
     </header>
 
     <section id="content" class="lets-talk--form">
-        <div class="wrapper">
-            <div class="page--title">Let`s talk</div>
-            <div class="form--container">
-                <div class="form-content">
-                    <form action="#" id="letsTalk">
-                        <div class="form-control">
-                            <label for="description">Tell us what you need</label>
-                            <div class="validaion-box"><textarea id="description" name="description"></textarea></div>
-                        </div>
-                        <div class="form-control">
-                            <label for="name">Name</label>
-                            <div class="validaion-box"><input type="text" id="name" name="name"></div>
-                        </div>
-                        <div class="form-control">
-                            <label for="company">Company</label>
-                            <div class="validaion-box"><input type="text" id="company" name="company"></div>
-                        </div>
-                        <div class="form-control">
-                            <label for="email">E-mail</label>
-                            <div class="validaion-box"><input type="text" id="email" name="email"></div>
-                        </div>
-                        <div class="form-control">
-                            <label for="phone">Phone</label>
-                            <div class="validaion-box"><input type="text" id="phone" name="phone"></div>
-                        </div>
-                        <div class="form-btns--box">
-                            <button type="submit" class="btn btn-primary">Send</button>
-                        </div>
-                    </form>
+         <div class="wrapper">
+            <div class="page--title">Cases</div>
+        </div>
+        <div class="casec--container">
+            <div class="cases--item">
+                 <div class="wrapper">
+                    <div class="cases--title">Разметка для оценки поведения людей</div>
+                    <div class="cases--tasc cases--box">
+                        <div class="cases--label">Задача:</div>
+                        <div class="cases--desc">Текстом в 2-3 предложения какая была задача и что требовалось сделать. Вот второе задание для показа приблизительного объема текста.</div>
+                    </div>
+                    <div class="cases--carousel owl-carousel">
+                        <img src="images/case11.jpg" alt="">
+                        <img src="images/case12.jpg" alt="">
+                        <img src="images/case11.jpg" alt="">
+                        <img src="images/case12.jpg" alt="">
+                        <img src="images/case11.jpg" alt="">
+                        <img src="images/case12.jpg" alt="">
+                    </div>
+                    <div class="cases--decision cases--box">
+                        <div class="cases--label">Решение:</div>
+                        <div class="cases--desc">Было много фотографий разного поведения людей Сервисом классификации задали пользователям вопрос что делают люди</div>
+                    </div>
+                    <div class="cases--result cases--box">
+                        <div class="cases--label">Результат:</div>
+                        <div class="cases--desc">Было много фотографий разного поведения людей Сервисом классификации задали пользователям вопрос что делают люди</div>
+                    </div>
                 </div>
-                <div class="form--description">
-                    <p>After receiving the application, we will contact you to find and discuss the best solution for your problem.</p> 
-                    <p>We will organize the content transfer, set the workflow and provide you with the best result.</p> 
-                    <p>If more convenient: <br><a href="mailto:hello@tagias.com">hello@tagias.com</a></p> 
+            </div>
+            <div class="cases--item">
+                 <div class="wrapper">
+                    <div class="cases--title">Разметка для оценки поведения людей</div>
+                    <div class="cases--tasc cases--box">
+                        <div class="cases--label">Задача:</div>
+                        <div class="cases--desc">Текстом в 2-3 предложения какая была задача и что требовалось сделать. Вот второе задание для показа приблизительного объема текста.</div>
+                    </div>
+                    <div class="cases--carousel owl-carousel">
+                        <img src="images/case11.jpg" alt="">
+                        <img src="images/case12.jpg" alt="">
+                        <img src="images/case11.jpg" alt="">
+                        <img src="images/case12.jpg" alt="">
+                        <img src="images/case11.jpg" alt="">
+                        <img src="images/case12.jpg" alt="">
+                    </div>
+                    <div class="cases--decision cases--box">
+                        <div class="cases--label">Решение:</div>
+                        <div class="cases--desc">Было много фотографий разного поведения людей Сервисом классификации задали пользователям вопрос что делают люди</div>
+                    </div>
+                    <div class="cases--result cases--box">
+                        <div class="cases--label">Результат:</div>
+                        <div class="cases--desc">Было много фотографий разного поведения людей Сервисом классификации задали пользователям вопрос что делают люди</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -171,41 +189,12 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/work.js"></script>
     <script>
-        "use strict";
-        (function($){
-            $(document).ready(function () {
-                $("#letsTalk").validate({
-                    rules: {
-                        email: {
-                            required: true,
-                            email: true,
-                        },
-                        phone: {
-                            required: true,
-                        },
-                        name: {
-                            required: true
-                        },
-                        company: {
-                            required: true
-                        },
-                        description: {
-                            required: true
-                        }
-                    },
-                    messages: {
-                        phone: {
-                            required: 'This field is required!',
-                        },
-                    },
-                    submitHandler: function(form) {
-                        event.preventDefault();
-                        form.submit();
-                    }
-
-                });
-            })
-        })(jQuery);
+        $('.cases--carousel').owlCarousel({
+            margin:10,
+            loop:true,
+            autoWidth:true,
+            items:4
+        })
     </script>
 </body>
 </html>
