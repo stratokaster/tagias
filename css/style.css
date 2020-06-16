@@ -604,7 +604,30 @@ header.fixed .get-started-btn{
 #cases .btns-box{
     margin-top: 85px;
 }
+#cases .cases--item{
+    padding: 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+#cases .cases--item .case-image {
+    flex-grow: 1;
+}
 
+#cases .cases--item .case-image img{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    object-position: center;
+}
 
 
 
